@@ -12,33 +12,30 @@ Voice dictation app for Mac. Press a hotkey, speak, get transcribed text pasted 
 
 ## Installation
 
-### Prerequisites
-- Mac with Python 3.8+
-- OpenAI API key
-- Microphone access
+### Option 1: Download Pre-built App (Easiest)
 
-### Setup
+1. Download `Listen.app.zip` from Releases
+2. Extract and move `Listen.app` to Applications
+3. Right-click → Open (first time only)
+4. Configure your OpenAI API key in Settings
 
-1. Open Terminal and navigate to this folder:
-   ```bash
-   cd /path/to/listen
-   ```
+### Option 2: Build from Source
 
-2. Run setup:
+See [BUILD.md](BUILD.md) for detailed build instructions.
+
+### Option 3: Run from Python
+
+1. Install dependencies:
    ```bash
    chmod +x setup.sh
    ./setup.sh
    ```
 
-3. Run the app:
+2. Run:
    ```bash
    source venv/bin/activate
    python3 listen.py
    ```
-
-4. Grant permissions when prompted:
-   - Microphone access
-   - Accessibility access (for auto-paste)
 
 ## Usage
 
